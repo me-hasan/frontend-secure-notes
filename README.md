@@ -1,10 +1,25 @@
 # Secure Notes — Frontend
 
-The React client for the [Secure Note-Taking API](../backend). The task brief explicitly deprioritises
-the UI (`"DO NOT waste time improving the frontend"`), so this app is deliberately thin: no component
-library, no router, and no styling beyond Tailwind plus one small file of shared primitives
-(`src/components/ui.tsx`). Its only job is to prove that the API integrates end to end and that the
-`user` / `admin` roles behave differently.
+[![CI](https://github.com/me-hasan/frontend-secure-notes/actions/workflows/ci.yml/badge.svg)](https://github.com/me-hasan/frontend-secure-notes/actions/workflows/ci.yml)
+
+The React client for the [Secure Note-Taking API](https://github.com/me-hasan/backend-secure-notes). The
+task brief explicitly deprioritises the UI (`"DO NOT waste time improving the frontend"`), so this app
+is deliberately thin: no component library, no router, and no styling beyond Tailwind plus one small
+file of shared primitives (`src/components/ui.tsx`). Its only job is to prove that the API integrates
+end to end and that the `user` / `admin` roles behave differently.
+
+---
+
+## Live deployment
+
+| | |
+|---|---|
+| App | <https://frontend-secure-notes-v1.vercel.app> |
+| API base | <https://backend-secure-notes.onrender.com/api> |
+
+Deployed on Vercel, pointed at the Render-hosted API. Both are free tiers — the Render instance sleeps
+after ~15 minutes idle, so the first sign-in can take up to a minute while it wakes. The seeded logins
+under [Seeded logins](#seeded-logins) work here unchanged.
 
 ---
 
